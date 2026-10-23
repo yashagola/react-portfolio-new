@@ -1,0 +1,197 @@
+.journey {
+  background: var(--bg-2);
+  position: relative;
+}
+
+.journey-header {
+  margin-bottom: 46px;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.journey-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journey-col-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.journey-col-title svg {
+  color: var(--accent);
+}
+
+/* experience cards */
+.exp-list,
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-card {
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 22px 22px 24px;
+  transition: var(--transition);
+}
+
+.exp-card:hover {
+  border-color: var(--line-2);
+  border-left-color: var(--accent);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.exp-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.exp-period {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--purple-300);
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  padding: 4px 11px;
+  border-radius: var(--radius-pill);
+}
+
+.exp-company {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-3);
+}
+
+.exp-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.exp-points {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.exp-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.point-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* education */
+.edu-card {
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 20px 22px;
+  transition: var(--transition);
+}
+
+.edu-card:hover {
+  border-color: var(--line-2);
+  transform: translateY(-3px);
+}
+
+.edu-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.edu-degree {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.edu-date {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-3);
+}
+
+.edu-school {
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+/* highlight card */
+.journey-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 22px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  border: 1px solid var(--line-2);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.journey-highlight svg {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.journey-highlight strong {
+  color: var(--text);
+}
+
+.journey-languages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 860px) {
+  .journey-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
